@@ -1,7 +1,7 @@
 import time
 from behave import given, when, then
 from features.helpers.driver import get_driver
-from features.pages.treinamento_page import *
+from features.pages.login_page import *
 
 @given(u'que a página de treinamento seja acessada')
 def acessar_site_treinamento(context):
