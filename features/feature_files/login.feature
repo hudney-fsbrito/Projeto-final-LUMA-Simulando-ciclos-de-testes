@@ -1,12 +1,15 @@
-Funcionalidade: Treinamento Automação
+Funcionalidade: Login
 
     @Smoke
-    Cenário: Verificar se o botão click-me muda o texto quando clicado
-        Dado que a página de treinamento seja acessada
-        Quando o botão click me for pressionado
-        Então o seu valor deverá mudar para "Obrigado!!"
+    Cenário: Cadastrar uma conta com login e senha
+        Dado que a página de LUMA seja acessada e clicado em Create an Account
+        Quando o formulário Create New Customer Account for preechido
+        Então a conta deve ser criada com sucesso
 
-    @Smoke @test
-    Cenário: Inserir o um valor no campo nome
-        Dado que a página de treinamento seja acessada
-        Quando o valor "David" for inserido no campo nome
+    @Smoke @Login
+    Cenário: Efetuar login com email e senha cadastrados
+        Dado que o usuário tenha cadastro
+        Quando os dados de login forem preechidos
+        Então o nome do usuário deve aparecer no topo da tela
+
+   

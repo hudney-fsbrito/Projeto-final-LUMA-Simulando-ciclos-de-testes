@@ -6,6 +6,9 @@ from selenium.webdriver.support import expected_conditions as EC
 def find_element(locator):
     return get_driver().find_element(By.CSS_SELECTOR, locator)
 
+def find_elements(locator):
+    return get_driver().find_elements(By.CSS_SELECTOR, locator)
+
 def get_element_text(locator):
     return find_element(locator).get_attribute("value")
 

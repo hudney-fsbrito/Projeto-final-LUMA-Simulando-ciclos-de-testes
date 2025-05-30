@@ -1,0 +1,488 @@
+[
+    {
+        "label": "get_driver",
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "isExtraImport": true,
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
+        "label": "get_driver",
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "isExtraImport": true,
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
+        "label": "get_driver",
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "isExtraImport": true,
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "isExtraImport": true,
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "Select",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "features.pages.base_page",
+        "description": "features.pages.base_page",
+        "isExtraImport": true,
+        "detail": "features.pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "given",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "when",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "then",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "isExtraImport": true,
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "Service",
+        "importPath": "selenium.webdriver.chrome.service",
+        "description": "selenium.webdriver.chrome.service",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.service",
+        "documentation": {}
+    },
+    {
+        "label": "ChromeDriverManager",
+        "importPath": "webdriver_manager.chrome",
+        "description": "webdriver_manager.chrome",
+        "isExtraImport": true,
+        "detail": "webdriver_manager.chrome",
+        "documentation": {}
+    },
+    {
+        "label": "Status",
+        "importPath": "behave.model_core",
+        "description": "behave.model_core",
+        "isExtraImport": true,
+        "detail": "behave.model_core",
+        "documentation": {}
+    },
+    {
+        "label": "set_driver",
+        "kind": 2,
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "peekOfCode": "def set_driver(instance):\n    global _driver\n    _driver = instance\ndef get_driver():\n    if _driver is None:\n        raise RuntimeError(\"Driver não foi inicializado! Verifique o before_scenario.\")\n    return _driver",
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
+        "label": "get_driver",
+        "kind": 2,
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "peekOfCode": "def get_driver():\n    if _driver is None:\n        raise RuntimeError(\"Driver não foi inicializado! Verifique o before_scenario.\")\n    return _driver",
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
+        "label": "_driver",
+        "kind": 5,
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "peekOfCode": "_driver = None\ndef set_driver(instance):\n    global _driver\n    _driver = instance\ndef get_driver():\n    if _driver is None:\n        raise RuntimeError(\"Driver não foi inicializado! Verifique o before_scenario.\")\n    return _driver",
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
+        "label": "find_element",
+        "kind": 2,
+        "importPath": "features.pages.base_page",
+        "description": "features.pages.base_page",
+        "peekOfCode": "def find_element(locator):\n    return get_driver().find_element(By.CSS_SELECTOR, locator)\ndef find_elements(locator):\n    return get_driver().find_elements(By.CSS_SELECTOR, locator)\ndef get_element_text(locator):\n    return find_element(locator).get_attribute(\"value\")\ndef wait_for_element(locator, timeout):\n    element = find_element(locator)\n    return WebDriverWait(get_driver(), timeout).until(\n        EC.presence_of_all_elements_located(element)",
+        "detail": "features.pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "find_elements",
+        "kind": 2,
+        "importPath": "features.pages.base_page",
+        "description": "features.pages.base_page",
+        "peekOfCode": "def find_elements(locator):\n    return get_driver().find_elements(By.CSS_SELECTOR, locator)\ndef get_element_text(locator):\n    return find_element(locator).get_attribute(\"value\")\ndef wait_for_element(locator, timeout):\n    element = find_element(locator)\n    return WebDriverWait(get_driver(), timeout).until(\n        EC.presence_of_all_elements_located(element)\n    )",
+        "detail": "features.pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "get_element_text",
+        "kind": 2,
+        "importPath": "features.pages.base_page",
+        "description": "features.pages.base_page",
+        "peekOfCode": "def get_element_text(locator):\n    return find_element(locator).get_attribute(\"value\")\ndef wait_for_element(locator, timeout):\n    element = find_element(locator)\n    return WebDriverWait(get_driver(), timeout).until(\n        EC.presence_of_all_elements_located(element)\n    )",
+        "detail": "features.pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "wait_for_element",
+        "kind": 2,
+        "importPath": "features.pages.base_page",
+        "description": "features.pages.base_page",
+        "peekOfCode": "def wait_for_element(locator, timeout):\n    element = find_element(locator)\n    return WebDriverWait(get_driver(), timeout).until(\n        EC.presence_of_all_elements_located(element)\n    )",
+        "detail": "features.pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "preencher_nome",
+        "kind": 2,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "def preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)\ndef preencher_email():\n    find_element(CAMPO_SOBRENOME).send_keys(email)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senha)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "preencher_sobrenome_nome",
+        "kind": 2,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "def preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)\ndef preencher_email():\n    find_element(CAMPO_SOBRENOME).send_keys(email)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senha)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)\ndef clicar_link_criar_conta():\n    # Localiza o link/botão na tela e clica",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "preencher_email",
+        "kind": 2,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "def preencher_email():\n    find_element(CAMPO_SOBRENOME).send_keys(email)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senha)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)\ndef clicar_link_criar_conta():\n    # Localiza o link/botão na tela e clica\n    get_driver().find_element(By.XPATH, CRIAR_CONTA_LINK).click()\ndef clicar_botao_criar_conta():",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "preencher_senha",
+        "kind": 2,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "def preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senha)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)\ndef clicar_link_criar_conta():\n    # Localiza o link/botão na tela e clica\n    get_driver().find_element(By.XPATH, CRIAR_CONTA_LINK).click()\ndef clicar_botao_criar_conta():\n    get_driver().find_element(By.XPATH, BOTAO_CRIAR_CONTA).click()\ndef preencher_criar_conta():",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "preencher_confirma_senha",
+        "kind": 2,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "def preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)\ndef clicar_link_criar_conta():\n    # Localiza o link/botão na tela e clica\n    get_driver().find_element(By.XPATH, CRIAR_CONTA_LINK).click()\ndef clicar_botao_criar_conta():\n    get_driver().find_element(By.XPATH, BOTAO_CRIAR_CONTA).click()\ndef preencher_criar_conta():\n    preencher_nome()\n    preencher_sobrenome_nome()",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "clicar_link_criar_conta",
+        "kind": 2,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "def clicar_link_criar_conta():\n    # Localiza o link/botão na tela e clica\n    get_driver().find_element(By.XPATH, CRIAR_CONTA_LINK).click()\ndef clicar_botao_criar_conta():\n    get_driver().find_element(By.XPATH, BOTAO_CRIAR_CONTA).click()\ndef preencher_criar_conta():\n    preencher_nome()\n    preencher_sobrenome_nome()\n    preencher_email()\n    preencher_senha()",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "clicar_botao_criar_conta",
+        "kind": 2,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "def clicar_botao_criar_conta():\n    get_driver().find_element(By.XPATH, BOTAO_CRIAR_CONTA).click()\ndef preencher_criar_conta():\n    preencher_nome()\n    preencher_sobrenome_nome()\n    preencher_email()\n    preencher_senha()\n    preencher_confirma_senha()\n# ___________________ RECUPERAR VALORES ___________________\n# def verificar_url_esperada(url_esperada):",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "preencher_criar_conta",
+        "kind": 2,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "def preencher_criar_conta():\n    preencher_nome()\n    preencher_sobrenome_nome()\n    preencher_email()\n    preencher_senha()\n    preencher_confirma_senha()\n# ___________________ RECUPERAR VALORES ___________________\n# def verificar_url_esperada(url_esperada):\n#     url_atual = get_driver().current_url\n#     assert url_atual == url_esperada, f\"Erro: Esperado a URL '{url_esperada}', mas obtido '{url_atual}'\"",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_recuperada_de_conta_criada",
+        "kind": 2,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "def mensagem_recuperada_de_conta_criada():\n    return get_driver().find_element(By.XPATH, CAMPO_CONTA_CRIADA_SUCESSO).text.strip()\ndef mensagem_esperada_de_conta_criada():\n    return mensagem_conta_criada_sucesso",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_esperada_de_conta_criada",
+        "kind": 2,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "def mensagem_esperada_de_conta_criada():\n    return mensagem_conta_criada_sucesso",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "CRIAR_CONTA_LINK",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "CRIAR_CONTA_LINK = \"//a[@href='https://magento.softwaretestingboard.com/customer/account/create/']\"\n# mapeando campos\nCAMPO_NOME = \"#firstname\"\nCAMPO_SOBRENOME = \"#lastname\"\nCAMPO_EMAIL = \"#email_address\"\nCAMPO_SENHA = \"#password\"\nCAMPO_CONFIRMA_SENHA = \"#password-confirmation\"\nBOTAO_CRIAR_CONTA = \"//button[@class='action submit primary']\"\nCAMPO_CONTA_CRIADA_SUCESSO = \"//div[contains(@class, 'messages')]//div[contains(@class, 'message-success')]//div\"\n# campos para veirificação",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "CAMPO_NOME",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "CAMPO_NOME = \"#firstname\"\nCAMPO_SOBRENOME = \"#lastname\"\nCAMPO_EMAIL = \"#email_address\"\nCAMPO_SENHA = \"#password\"\nCAMPO_CONFIRMA_SENHA = \"#password-confirmation\"\nBOTAO_CRIAR_CONTA = \"//button[@class='action submit primary']\"\nCAMPO_CONTA_CRIADA_SUCESSO = \"//div[contains(@class, 'messages')]//div[contains(@class, 'message-success')]//div\"\n# campos para veirificação\nINFORMACAO_DE_CONTA = \"//div[@class='box box-information']/div[@class='box-content']/p\"\n# variáveis para teste",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "CAMPO_SOBRENOME",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "CAMPO_SOBRENOME = \"#lastname\"\nCAMPO_EMAIL = \"#email_address\"\nCAMPO_SENHA = \"#password\"\nCAMPO_CONFIRMA_SENHA = \"#password-confirmation\"\nBOTAO_CRIAR_CONTA = \"//button[@class='action submit primary']\"\nCAMPO_CONTA_CRIADA_SUCESSO = \"//div[contains(@class, 'messages')]//div[contains(@class, 'message-success')]//div\"\n# campos para veirificação\nINFORMACAO_DE_CONTA = \"//div[@class='box box-information']/div[@class='box-content']/p\"\n# variáveis para teste\n# url_esperada = \"https://magento.softwaretestingboard.com/customer/account/\"",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "CAMPO_EMAIL",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "CAMPO_EMAIL = \"#email_address\"\nCAMPO_SENHA = \"#password\"\nCAMPO_CONFIRMA_SENHA = \"#password-confirmation\"\nBOTAO_CRIAR_CONTA = \"//button[@class='action submit primary']\"\nCAMPO_CONTA_CRIADA_SUCESSO = \"//div[contains(@class, 'messages')]//div[contains(@class, 'message-success')]//div\"\n# campos para veirificação\nINFORMACAO_DE_CONTA = \"//div[@class='box box-information']/div[@class='box-content']/p\"\n# variáveis para teste\n# url_esperada = \"https://magento.softwaretestingboard.com/customer/account/\"\nmensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "CAMPO_SENHA",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "CAMPO_SENHA = \"#password\"\nCAMPO_CONFIRMA_SENHA = \"#password-confirmation\"\nBOTAO_CRIAR_CONTA = \"//button[@class='action submit primary']\"\nCAMPO_CONTA_CRIADA_SUCESSO = \"//div[contains(@class, 'messages')]//div[contains(@class, 'message-success')]//div\"\n# campos para veirificação\nINFORMACAO_DE_CONTA = \"//div[@class='box box-information']/div[@class='box-content']/p\"\n# variáveis para teste\n# url_esperada = \"https://magento.softwaretestingboard.com/customer/account/\"\nmensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"\nnome = \"Marsupilame\"",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "CAMPO_CONFIRMA_SENHA",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "CAMPO_CONFIRMA_SENHA = \"#password-confirmation\"\nBOTAO_CRIAR_CONTA = \"//button[@class='action submit primary']\"\nCAMPO_CONTA_CRIADA_SUCESSO = \"//div[contains(@class, 'messages')]//div[contains(@class, 'message-success')]//div\"\n# campos para veirificação\nINFORMACAO_DE_CONTA = \"//div[@class='box box-information']/div[@class='box-content']/p\"\n# variáveis para teste\n# url_esperada = \"https://magento.softwaretestingboard.com/customer/account/\"\nmensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"\nnome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "BOTAO_CRIAR_CONTA",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "BOTAO_CRIAR_CONTA = \"//button[@class='action submit primary']\"\nCAMPO_CONTA_CRIADA_SUCESSO = \"//div[contains(@class, 'messages')]//div[contains(@class, 'message-success')]//div\"\n# campos para veirificação\nINFORMACAO_DE_CONTA = \"//div[@class='box box-information']/div[@class='box-content']/p\"\n# variáveis para teste\n# url_esperada = \"https://magento.softwaretestingboard.com/customer/account/\"\nmensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"\nnome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "CAMPO_CONTA_CRIADA_SUCESSO",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "CAMPO_CONTA_CRIADA_SUCESSO = \"//div[contains(@class, 'messages')]//div[contains(@class, 'message-success')]//div\"\n# campos para veirificação\nINFORMACAO_DE_CONTA = \"//div[@class='box box-information']/div[@class='box-content']/p\"\n# variáveis para teste\n# url_esperada = \"https://magento.softwaretestingboard.com/customer/account/\"\nmensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"\nnome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "INFORMACAO_DE_CONTA",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "INFORMACAO_DE_CONTA = \"//div[@class='box box-information']/div[@class='box-content']/p\"\n# variáveis para teste\n# url_esperada = \"https://magento.softwaretestingboard.com/customer/account/\"\nmensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"\nnome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE CADASTROS ___________________\ndef preencher_nome():",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_conta_criada_sucesso",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "mensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"\nnome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE CADASTROS ___________________\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "nome",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "nome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE CADASTROS ___________________\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)\ndef preencher_email():",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "sobrenome",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "sobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE CADASTROS ___________________\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)\ndef preencher_email():\n    find_element(CAMPO_SOBRENOME).send_keys(email)",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "email",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "email = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE CADASTROS ___________________\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)\ndef preencher_email():\n    find_element(CAMPO_SOBRENOME).send_keys(email)\ndef preencher_senha():",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "senha",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "senha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE CADASTROS ___________________\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)\ndef preencher_email():\n    find_element(CAMPO_SOBRENOME).send_keys(email)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senha)",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "acessar_site_LUMA",
+        "kind": 2,
+        "importPath": "features.steps.login_steps",
+        "description": "features.steps.login_steps",
+        "peekOfCode": "def acessar_site_LUMA(context):\n    get_driver().get(\"https://magento.softwaretestingboard.com/\")\n@when(u'o formulário Create New Customer Account for preechido')\ndef preencher_campos_criar_nova_conta(context):\n    clicar_link_criar_conta()\n    preencher_criar_conta()\n    clicar_botao_criar_conta()\n    time.sleep(2)\n@then(u'a conta deve ser criada com sucesso')\ndef validar_conta_criada(context):",
+        "detail": "features.steps.login_steps",
+        "documentation": {}
+    },
+    {
+        "label": "preencher_campos_criar_nova_conta",
+        "kind": 2,
+        "importPath": "features.steps.login_steps",
+        "description": "features.steps.login_steps",
+        "peekOfCode": "def preencher_campos_criar_nova_conta(context):\n    clicar_link_criar_conta()\n    preencher_criar_conta()\n    clicar_botao_criar_conta()\n    time.sleep(2)\n@then(u'a conta deve ser criada com sucesso')\ndef validar_conta_criada(context):\n    # verificar_url_esperada()\n    assert mensagem_recuperada_de_conta_criada() == mensagem_esperada_de_conta_criada(), f\"\\nEsperados: {mensagem_esperada_de_conta_criada()}\\nRecebidos: {mensagem_recuperada_de_conta_criada()}\"\n    time.sleep(2)",
+        "detail": "features.steps.login_steps",
+        "documentation": {}
+    },
+    {
+        "label": "validar_conta_criada",
+        "kind": 2,
+        "importPath": "features.steps.login_steps",
+        "description": "features.steps.login_steps",
+        "peekOfCode": "def validar_conta_criada(context):\n    # verificar_url_esperada()\n    assert mensagem_recuperada_de_conta_criada() == mensagem_esperada_de_conta_criada(), f\"\\nEsperados: {mensagem_esperada_de_conta_criada()}\\nRecebidos: {mensagem_recuperada_de_conta_criada()}\"\n    time.sleep(2)",
+        "detail": "features.steps.login_steps",
+        "documentation": {}
+    },
+    {
+        "label": "before_scenario",
+        "kind": 2,
+        "importPath": "features.environment",
+        "description": "features.environment",
+        "peekOfCode": "def before_scenario(context, scenario):\n    service = Service(ChromeDriverManager().install())\n    # options = webdriver.ChromeOptions()\n    driver = webdriver.Chrome(service=service)\n    driver.implicitly_wait(10)\n    # context.driver.set_window_position(2000, 0)\n    set_driver(driver)\ndef after_scenario(context, scenario):\n    print(scenario.name)\n    driver = get_driver()",
+        "detail": "features.environment",
+        "documentation": {}
+    },
+    {
+        "label": "after_scenario",
+        "kind": 2,
+        "importPath": "features.environment",
+        "description": "features.environment",
+        "peekOfCode": "def after_scenario(context, scenario):\n    print(scenario.name)\n    driver = get_driver()\n    if scenario.status == Status.failed:\n        screenshor_dir = \"screenshots\"\n        os.makedirs(screenshor_dir, exist_ok=True)\n        screenshot_path = os.path.join(screenshor_dir, f\"{scenario.name.replace(' ', '_')}.png\")\n        driver.save_screenshot(screenshot_path)\n    driver.quit()",
+        "detail": "features.environment",
+        "documentation": {}
+    }
+]
