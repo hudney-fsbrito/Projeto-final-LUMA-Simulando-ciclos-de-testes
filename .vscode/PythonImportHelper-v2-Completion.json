@@ -185,6 +185,22 @@
         "documentation": {}
     },
     {
+        "label": "mensagem_de_pedido_efetuado",
+        "importPath": "features.pages.carrinho_page",
+        "description": "features.pages.carrinho_page",
+        "isExtraImport": true,
+        "detail": "features.pages.carrinho_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_esperada_de_compra",
+        "importPath": "features.pages.carrinho_page",
+        "description": "features.pages.carrinho_page",
+        "isExtraImport": true,
+        "detail": "features.pages.carrinho_page",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
@@ -333,7 +349,7 @@
         "kind": 2,
         "importPath": "features.pages.carrinho_page",
         "description": "features.pages.carrinho_page",
-        "peekOfCode": "def clica_add_to_cart():\n    find_element(BOTAO_ADD_TO_CART).click()\ndef clica_no_carrinho():\n    find_element(BOTAO_CARRINHO_DE_COMPRAS).click()\ndef fazer_checkout():\n    find_element(BOTAO_FAZER_CHECKOUT).click()\ndef escolhe_frete():\n    get_driver().find_element(By.XPATH, FRETE_INTPUT).click()\ndef clica_proximo():\n    get_driver().find_element(By.XPATH, BOTAO_NEXT).click()",
+        "peekOfCode": "def clica_add_to_cart():\n    find_element(BOTAO_ADD_TO_CART).click()\n    time.sleep(5)\ndef clica_no_carrinho():\n    find_element(BOTAO_CARRINHO_DE_COMPRAS).click()\ndef fazer_checkout():\n    find_element(BOTAO_FAZER_CHECKOUT).click()\ndef escolhe_frete():\n    get_driver().find_element(By.XPATH, FRETE_INTPUT).click()\ndef clica_proximo():",
         "detail": "features.pages.carrinho_page",
         "documentation": {}
     },
@@ -432,7 +448,25 @@
         "kind": 2,
         "importPath": "features.pages.carrinho_page",
         "description": "features.pages.carrinho_page",
-        "peekOfCode": "def finalizar_pedido():\n    clica_no_carrinho()\n    fazer_checkout()\n    escolhe_frete()\n    clica_proximo()\n    clica_fazer_pedido()",
+        "peekOfCode": "def finalizar_pedido():\n    clica_no_carrinho()\n    fazer_checkout()\n    escolhe_frete()\n    clica_proximo()\n    clica_fazer_pedido()\n    time.sleep(5)\n# VALIDA COMPRA\ndef mensagem_de_pedido_efetuado():\n    return find_element(CAMPO_MESNSAGEM_DE_CONFIRMACAO).text.strip()",
+        "detail": "features.pages.carrinho_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_de_pedido_efetuado",
+        "kind": 2,
+        "importPath": "features.pages.carrinho_page",
+        "description": "features.pages.carrinho_page",
+        "peekOfCode": "def mensagem_de_pedido_efetuado():\n    return find_element(CAMPO_MESNSAGEM_DE_CONFIRMACAO).text.strip()\ndef mensagem_esperada_de_compra():\n    return mensagem_compra_criada_sucesso",
+        "detail": "features.pages.carrinho_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_esperada_de_compra",
+        "kind": 2,
+        "importPath": "features.pages.carrinho_page",
+        "description": "features.pages.carrinho_page",
+        "peekOfCode": "def mensagem_esperada_de_compra():\n    return mensagem_compra_criada_sucesso",
         "detail": "features.pages.carrinho_page",
         "documentation": {}
     },
@@ -549,7 +583,7 @@
         "kind": 5,
         "importPath": "features.pages.carrinho_page",
         "description": "features.pages.carrinho_page",
-        "peekOfCode": "ESTADO = \"#VYF770S\"\nCIDADE = \"#LNDWA0J\"\nCEP = \"#HBFHTT6\"\nRUA= \"#QP2ISQY\"\nTELEFONE= \"#WMYSR4C\"\nFRETE_INTPUT = \"//input[@value='flatrate_flatrate']\"\n#_________ CAMPO DA MENSAGEM DE VALIDAÇÃO _________\nCAMPO_MESNSAGEM_DE_CONFIRMACAO = \".base\"\nquantidade = \"1\"\n#Método de click",
+        "peekOfCode": "ESTADO = \"#VYF770S\"\nCIDADE = \"#LNDWA0J\"\nCEP = \"#HBFHTT6\"\nRUA= \"#QP2ISQY\"\nTELEFONE= \"#WMYSR4C\"\nFRETE_INTPUT = \"//input[@value='flatrate_flatrate']\"\n#_________ CAMPO DA MENSAGEM DE VALIDAÇÃO _________\nCAMPO_MESNSAGEM_DE_CONFIRMACAO = \".base\"\nquantidade = \"1\"\nmensagem_compra_criada_sucesso = \"Thank you for your purchase!\"",
         "detail": "features.pages.carrinho_page",
         "documentation": {}
     },
@@ -558,7 +592,7 @@
         "kind": 5,
         "importPath": "features.pages.carrinho_page",
         "description": "features.pages.carrinho_page",
-        "peekOfCode": "CIDADE = \"#LNDWA0J\"\nCEP = \"#HBFHTT6\"\nRUA= \"#QP2ISQY\"\nTELEFONE= \"#WMYSR4C\"\nFRETE_INTPUT = \"//input[@value='flatrate_flatrate']\"\n#_________ CAMPO DA MENSAGEM DE VALIDAÇÃO _________\nCAMPO_MESNSAGEM_DE_CONFIRMACAO = \".base\"\nquantidade = \"1\"\n#Método de click\ndef clica_add_to_cart():",
+        "peekOfCode": "CIDADE = \"#LNDWA0J\"\nCEP = \"#HBFHTT6\"\nRUA= \"#QP2ISQY\"\nTELEFONE= \"#WMYSR4C\"\nFRETE_INTPUT = \"//input[@value='flatrate_flatrate']\"\n#_________ CAMPO DA MENSAGEM DE VALIDAÇÃO _________\nCAMPO_MESNSAGEM_DE_CONFIRMACAO = \".base\"\nquantidade = \"1\"\nmensagem_compra_criada_sucesso = \"Thank you for your purchase!\"\n#Método de click",
         "detail": "features.pages.carrinho_page",
         "documentation": {}
     },
@@ -567,7 +601,7 @@
         "kind": 5,
         "importPath": "features.pages.carrinho_page",
         "description": "features.pages.carrinho_page",
-        "peekOfCode": "CEP = \"#HBFHTT6\"\nRUA= \"#QP2ISQY\"\nTELEFONE= \"#WMYSR4C\"\nFRETE_INTPUT = \"//input[@value='flatrate_flatrate']\"\n#_________ CAMPO DA MENSAGEM DE VALIDAÇÃO _________\nCAMPO_MESNSAGEM_DE_CONFIRMACAO = \".base\"\nquantidade = \"1\"\n#Método de click\ndef clica_add_to_cart():\n    find_element(BOTAO_ADD_TO_CART).click()",
+        "peekOfCode": "CEP = \"#HBFHTT6\"\nRUA= \"#QP2ISQY\"\nTELEFONE= \"#WMYSR4C\"\nFRETE_INTPUT = \"//input[@value='flatrate_flatrate']\"\n#_________ CAMPO DA MENSAGEM DE VALIDAÇÃO _________\nCAMPO_MESNSAGEM_DE_CONFIRMACAO = \".base\"\nquantidade = \"1\"\nmensagem_compra_criada_sucesso = \"Thank you for your purchase!\"\n#Método de click\ndef clica_add_to_cart():",
         "detail": "features.pages.carrinho_page",
         "documentation": {}
     },
@@ -576,7 +610,7 @@
         "kind": 5,
         "importPath": "features.pages.carrinho_page",
         "description": "features.pages.carrinho_page",
-        "peekOfCode": "FRETE_INTPUT = \"//input[@value='flatrate_flatrate']\"\n#_________ CAMPO DA MENSAGEM DE VALIDAÇÃO _________\nCAMPO_MESNSAGEM_DE_CONFIRMACAO = \".base\"\nquantidade = \"1\"\n#Método de click\ndef clica_add_to_cart():\n    find_element(BOTAO_ADD_TO_CART).click()\ndef clica_no_carrinho():\n    find_element(BOTAO_CARRINHO_DE_COMPRAS).click()\ndef fazer_checkout():",
+        "peekOfCode": "FRETE_INTPUT = \"//input[@value='flatrate_flatrate']\"\n#_________ CAMPO DA MENSAGEM DE VALIDAÇÃO _________\nCAMPO_MESNSAGEM_DE_CONFIRMACAO = \".base\"\nquantidade = \"1\"\nmensagem_compra_criada_sucesso = \"Thank you for your purchase!\"\n#Método de click\ndef clica_add_to_cart():\n    find_element(BOTAO_ADD_TO_CART).click()\n    time.sleep(5)\ndef clica_no_carrinho():",
         "detail": "features.pages.carrinho_page",
         "documentation": {}
     },
@@ -585,7 +619,7 @@
         "kind": 5,
         "importPath": "features.pages.carrinho_page",
         "description": "features.pages.carrinho_page",
-        "peekOfCode": "CAMPO_MESNSAGEM_DE_CONFIRMACAO = \".base\"\nquantidade = \"1\"\n#Método de click\ndef clica_add_to_cart():\n    find_element(BOTAO_ADD_TO_CART).click()\ndef clica_no_carrinho():\n    find_element(BOTAO_CARRINHO_DE_COMPRAS).click()\ndef fazer_checkout():\n    find_element(BOTAO_FAZER_CHECKOUT).click()\ndef escolhe_frete():",
+        "peekOfCode": "CAMPO_MESNSAGEM_DE_CONFIRMACAO = \".base\"\nquantidade = \"1\"\nmensagem_compra_criada_sucesso = \"Thank you for your purchase!\"\n#Método de click\ndef clica_add_to_cart():\n    find_element(BOTAO_ADD_TO_CART).click()\n    time.sleep(5)\ndef clica_no_carrinho():\n    find_element(BOTAO_CARRINHO_DE_COMPRAS).click()\ndef fazer_checkout():",
         "detail": "features.pages.carrinho_page",
         "documentation": {}
     },
@@ -594,7 +628,16 @@
         "kind": 5,
         "importPath": "features.pages.carrinho_page",
         "description": "features.pages.carrinho_page",
-        "peekOfCode": "quantidade = \"1\"\n#Método de click\ndef clica_add_to_cart():\n    find_element(BOTAO_ADD_TO_CART).click()\ndef clica_no_carrinho():\n    find_element(BOTAO_CARRINHO_DE_COMPRAS).click()\ndef fazer_checkout():\n    find_element(BOTAO_FAZER_CHECKOUT).click()\ndef escolhe_frete():\n    get_driver().find_element(By.XPATH, FRETE_INTPUT).click()",
+        "peekOfCode": "quantidade = \"1\"\nmensagem_compra_criada_sucesso = \"Thank you for your purchase!\"\n#Método de click\ndef clica_add_to_cart():\n    find_element(BOTAO_ADD_TO_CART).click()\n    time.sleep(5)\ndef clica_no_carrinho():\n    find_element(BOTAO_CARRINHO_DE_COMPRAS).click()\ndef fazer_checkout():\n    find_element(BOTAO_FAZER_CHECKOUT).click()",
+        "detail": "features.pages.carrinho_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_compra_criada_sucesso",
+        "kind": 5,
+        "importPath": "features.pages.carrinho_page",
+        "description": "features.pages.carrinho_page",
+        "peekOfCode": "mensagem_compra_criada_sucesso = \"Thank you for your purchase!\"\n#Método de click\ndef clica_add_to_cart():\n    find_element(BOTAO_ADD_TO_CART).click()\n    time.sleep(5)\ndef clica_no_carrinho():\n    find_element(BOTAO_CARRINHO_DE_COMPRAS).click()\ndef fazer_checkout():\n    find_element(BOTAO_FAZER_CHECKOUT).click()\ndef escolhe_frete():",
         "detail": "features.pages.carrinho_page",
         "documentation": {}
     },
@@ -927,7 +970,7 @@
         "kind": 2,
         "importPath": "features.steps.carrinho_steps",
         "description": "features.steps.carrinho_steps",
-        "peekOfCode": "def adicionar_produto(context):\n    acessar_site_LUMA(context)\n    clicar_sign_in(context)\n    preencher_dados_login(context)\n    adicionar_produto_carrinho()\n@when(u'finaliza o processo de pedido')\ndef step_impl(context):\n    finalizar_pedido()\n@then(u'a mensagem Thank you for your purchase! deverá surgir')\ndef step_impl(context):",
+        "peekOfCode": "def adicionar_produto(context):\n    acessar_site_LUMA(context)\n    clicar_sign_in(context)\n    preencher_dados_login(context)\n    adicionar_produto_carrinho()\n@when(u'finaliza o processo de pedido')\ndef step_impl(context):\n    finalizar_pedido()\n@then(u'a mensagem Thank you for your purchase! deverá surgir')\ndef valida_compra(context):",
         "detail": "features.steps.carrinho_steps",
         "documentation": {}
     },
@@ -936,16 +979,16 @@
         "kind": 2,
         "importPath": "features.steps.carrinho_steps",
         "description": "features.steps.carrinho_steps",
-        "peekOfCode": "def step_impl(context):\n    finalizar_pedido()\n@then(u'a mensagem Thank you for your purchase! deverá surgir')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then a mensagem Thank you for your purchase! deverá surgir')",
+        "peekOfCode": "def step_impl(context):\n    finalizar_pedido()\n@then(u'a mensagem Thank you for your purchase! deverá surgir')\ndef valida_compra(context):\n    assert mensagem_de_pedido_efetuado() == mensagem_esperada_de_compra(), f\"\\nEsperados: {mensagem_esperada_de_compra()}\\nRecebidos: {mensagem_de_pedido_efetuado()}\"",
         "detail": "features.steps.carrinho_steps",
         "documentation": {}
     },
     {
-        "label": "step_impl",
+        "label": "valida_compra",
         "kind": 2,
         "importPath": "features.steps.carrinho_steps",
         "description": "features.steps.carrinho_steps",
-        "peekOfCode": "def step_impl(context):\n    raise NotImplementedError(u'STEP: Then a mensagem Thank you for your purchase! deverá surgir')",
+        "peekOfCode": "def valida_compra(context):\n    assert mensagem_de_pedido_efetuado() == mensagem_esperada_de_compra(), f\"\\nEsperados: {mensagem_esperada_de_compra()}\\nRecebidos: {mensagem_de_pedido_efetuado()}\"",
         "detail": "features.steps.carrinho_steps",
         "documentation": {}
     },

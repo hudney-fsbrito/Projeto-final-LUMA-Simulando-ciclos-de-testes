@@ -4,4 +4,4 @@ Funcionalidade: Carrinho de compras
   Cenário: Efetuar a finalização do pedido
   Dado adicione o produto no carrinho
   Quando finaliza o processo de pedido
-#   Então a mensagem Thank you for your purchase! deverá surgir
+  Então a mensagem Thank you for your purchase! deverá surgir

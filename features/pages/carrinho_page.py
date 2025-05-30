@@ -34,10 +34,12 @@ FRETE_INTPUT = "//input[@value='flatrate_flatrate']"
 CAMPO_MESNSAGEM_DE_CONFIRMACAO = ".base"
 
 quantidade = "1"
+mensagem_compra_criada_sucesso = "Thank you for your purchase!"
 
 #Método de click
 def clica_add_to_cart():
     find_element(BOTAO_ADD_TO_CART).click()
+    time.sleep(5)
 
 def clica_no_carrinho():
     find_element(BOTAO_CARRINHO_DE_COMPRAS).click()
@@ -85,3 +87,12 @@ def finalizar_pedido():
     escolhe_frete()
     clica_proximo()
     clica_fazer_pedido()
+    time.sleep(5)
+
+
+# VALIDA COMPRA
+def mensagem_de_pedido_efetuado():
+    return find_element(CAMPO_MESNSAGEM_DE_CONFIRMACAO).text.strip()
+
+def mensagem_esperada_de_compra():
+    return mensagem_compra_criada_sucesso

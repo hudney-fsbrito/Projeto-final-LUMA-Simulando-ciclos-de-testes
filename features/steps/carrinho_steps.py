@@ -1,7 +1,8 @@
 import time
 from behave import given, when, then
 from features.helpers.driver import get_driver
-from features.pages.carrinho_page import adicionar_produto_carrinho, finalizar_pedido
+from features.pages.carrinho_page import (adicionar_produto_carrinho, finalizar_pedido,
+    mensagem_de_pedido_efetuado, mensagem_esperada_de_compra)
 from features.pages.login_page import *
 from features.steps.login_steps import acessar_site_LUMA, clicar_sign_in, preencher_dados_login
 
@@ -22,5 +23,5 @@ def step_impl(context):
 
 
 @then(u'a mensagem Thank you for your purchase! deverá surgir')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then a mensagem Thank you for your purchase! deverá surgir')
+def valida_compra(context):
+    assert mensagem_de_pedido_efetuado() == mensagem_esperada_de_compra(), f"\nEsperados: {mensagem_esperada_de_compra()}\nRecebidos: {mensagem_de_pedido_efetuado()}"
