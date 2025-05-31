@@ -14,6 +14,7 @@ def before_scenario(context, scenario):
     driver.implicitly_wait(10)
     # context.driver.set_window_position(2000, 0)
     set_driver(driver)
+    driver.maximize_window()
 
 def after_scenario(context, scenario):
     print(scenario.name)
