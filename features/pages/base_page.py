@@ -12,8 +12,5 @@ def find_elements(locator):
 def get_element_text(locator):
     return find_element(locator).get_attribute("value")
 
-def wait_for_element(locator, timeout):
-    element = find_element(locator)
-    return WebDriverWait(get_driver(), timeout).until(
-        EC.presence_of_all_elements_located(element)
-    )
+def wait_for_element(locator, timeout=10):
+    return WebDriverWait(get_driver(), timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, locator)))
