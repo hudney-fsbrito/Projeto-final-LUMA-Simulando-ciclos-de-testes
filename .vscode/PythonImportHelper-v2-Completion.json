@@ -32,6 +32,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "features.pages.base_page",
+        "description": "features.pages.base_page",
+        "isExtraImport": true,
+        "detail": "features.pages.base_page",
+        "documentation": {}
+    },
+    {
         "label": "By",
         "importPath": "selenium.webdriver.common.by",
         "description": "selenium.webdriver.common.by",
@@ -45,6 +53,22 @@
         "description": "selenium.webdriver.common.by",
         "isExtraImport": true,
         "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "get_driver",
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "isExtraImport": true,
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
+        "label": "get_driver",
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "isExtraImport": true,
+        "detail": "features.helpers.driver",
         "documentation": {}
     },
     {
@@ -145,6 +169,14 @@
     },
     {
         "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "Select",
         "importPath": "selenium.webdriver.support.ui",
         "description": "selenium.webdriver.support.ui",
         "isExtraImport": true,
@@ -305,6 +337,38 @@
         "documentation": {}
     },
     {
+        "label": "given",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "when",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "then",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "isExtraImport": true,
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
@@ -385,6 +449,14 @@
         "documentation": {}
     },
     {
+        "label": "acessar_site_LUMA",
+        "importPath": "features.steps.login_steps",
+        "description": "features.steps.login_steps",
+        "isExtraImport": true,
+        "detail": "features.steps.login_steps",
+        "documentation": {}
+    },
+    {
         "label": "adicionar_produto_carrinho",
         "importPath": "features.pages.carrinho_page",
         "description": "features.pages.carrinho_page",
@@ -414,6 +486,22 @@
         "description": "features.pages.carrinho_page",
         "isExtraImport": true,
         "detail": "features.pages.carrinho_page",
+        "documentation": {}
+    },
+    {
+        "label": "clicar_sale",
+        "importPath": "features.pages.oferta_page",
+        "description": "features.pages.oferta_page",
+        "isExtraImport": true,
+        "detail": "features.pages.oferta_page",
+        "documentation": {}
+    },
+    {
+        "label": "validar_clicar_sale",
+        "importPath": "features.pages.oferta_page",
+        "description": "features.pages.oferta_page",
+        "isExtraImport": true,
+        "detail": "features.pages.oferta_page",
         "documentation": {}
     },
     {
@@ -1238,6 +1326,51 @@
         "documentation": {}
     },
     {
+        "label": "clicar_sale",
+        "kind": 2,
+        "importPath": "features.pages.oferta_page",
+        "description": "features.pages.oferta_page",
+        "peekOfCode": "def clicar_sale():\n    get_driver().find_element(By.XPATH,LINK_SALE).click()\ndef validar_clicar_sale():\n    verificar_url_esperada(url_esperada)\ndef verificar_url_esperada(url_esperada):\n    url_atual = get_driver().current_url\n    assert url_atual == url_esperada, f\"Erro: Esperado a URL '{url_esperada}', mas obtido '{url_atual}'\"\n    print(\"A URL está correta.\")",
+        "detail": "features.pages.oferta_page",
+        "documentation": {}
+    },
+    {
+        "label": "validar_clicar_sale",
+        "kind": 2,
+        "importPath": "features.pages.oferta_page",
+        "description": "features.pages.oferta_page",
+        "peekOfCode": "def validar_clicar_sale():\n    verificar_url_esperada(url_esperada)\ndef verificar_url_esperada(url_esperada):\n    url_atual = get_driver().current_url\n    assert url_atual == url_esperada, f\"Erro: Esperado a URL '{url_esperada}', mas obtido '{url_atual}'\"\n    print(\"A URL está correta.\")",
+        "detail": "features.pages.oferta_page",
+        "documentation": {}
+    },
+    {
+        "label": "verificar_url_esperada",
+        "kind": 2,
+        "importPath": "features.pages.oferta_page",
+        "description": "features.pages.oferta_page",
+        "peekOfCode": "def verificar_url_esperada(url_esperada):\n    url_atual = get_driver().current_url\n    assert url_atual == url_esperada, f\"Erro: Esperado a URL '{url_esperada}', mas obtido '{url_atual}'\"\n    print(\"A URL está correta.\")",
+        "detail": "features.pages.oferta_page",
+        "documentation": {}
+    },
+    {
+        "label": "LINK_SALE",
+        "kind": 5,
+        "importPath": "features.pages.oferta_page",
+        "description": "features.pages.oferta_page",
+        "peekOfCode": "LINK_SALE = '//a[@href=\"https://magento.softwaretestingboard.com/sale.html\"]'\nurl_esperada = \"https://magento.softwaretestingboard.com/sale.html\"\ndef clicar_sale():\n    get_driver().find_element(By.XPATH,LINK_SALE).click()\ndef validar_clicar_sale():\n    verificar_url_esperada(url_esperada)\ndef verificar_url_esperada(url_esperada):\n    url_atual = get_driver().current_url\n    assert url_atual == url_esperada, f\"Erro: Esperado a URL '{url_esperada}', mas obtido '{url_atual}'\"\n    print(\"A URL está correta.\")",
+        "detail": "features.pages.oferta_page",
+        "documentation": {}
+    },
+    {
+        "label": "url_esperada",
+        "kind": 5,
+        "importPath": "features.pages.oferta_page",
+        "description": "features.pages.oferta_page",
+        "peekOfCode": "url_esperada = \"https://magento.softwaretestingboard.com/sale.html\"\ndef clicar_sale():\n    get_driver().find_element(By.XPATH,LINK_SALE).click()\ndef validar_clicar_sale():\n    verificar_url_esperada(url_esperada)\ndef verificar_url_esperada(url_esperada):\n    url_atual = get_driver().current_url\n    assert url_atual == url_esperada, f\"Erro: Esperado a URL '{url_esperada}', mas obtido '{url_atual}'\"\n    print(\"A URL está correta.\")",
+        "detail": "features.pages.oferta_page",
+        "documentation": {}
+    },
+    {
         "label": "volta_para_home",
         "kind": 2,
         "importPath": "features.pages.pagina_novidades_page",
@@ -1472,6 +1605,33 @@
         "documentation": {}
     },
     {
+        "label": "inicio_homepage",
+        "kind": 2,
+        "importPath": "features.steps.oferta_steps",
+        "description": "features.steps.oferta_steps",
+        "peekOfCode": "def inicio_homepage(context):\n    acessar_site_LUMA(context)\n@when(u'clica no sale')\ndef clica_no_link_sale(context):\n    clicar_sale()\n@then(u'deve ser redirecionado para página sale')\ndef validar_sale(context):\n    validar_clicar_sale()",
+        "detail": "features.steps.oferta_steps",
+        "documentation": {}
+    },
+    {
+        "label": "clica_no_link_sale",
+        "kind": 2,
+        "importPath": "features.steps.oferta_steps",
+        "description": "features.steps.oferta_steps",
+        "peekOfCode": "def clica_no_link_sale(context):\n    clicar_sale()\n@then(u'deve ser redirecionado para página sale')\ndef validar_sale(context):\n    validar_clicar_sale()",
+        "detail": "features.steps.oferta_steps",
+        "documentation": {}
+    },
+    {
+        "label": "validar_sale",
+        "kind": 2,
+        "importPath": "features.steps.oferta_steps",
+        "description": "features.steps.oferta_steps",
+        "peekOfCode": "def validar_sale(context):\n    validar_clicar_sale()",
+        "detail": "features.steps.oferta_steps",
+        "documentation": {}
+    },
+    {
         "label": "homepage",
         "kind": 2,
         "importPath": "features.steps.pagina_novidades_steps",
@@ -1503,7 +1663,7 @@
         "kind": 2,
         "importPath": "features.environment",
         "description": "features.environment",
-        "peekOfCode": "def before_scenario(context, scenario):\n    service = Service(ChromeDriverManager().install())\n    # options = webdriver.ChromeOptions()\n    driver = webdriver.Chrome(service=service)\n    driver.implicitly_wait(10)\n    # context.driver.set_window_position(2000, 0)\n    set_driver(driver)\ndef after_scenario(context, scenario):\n    print(scenario.name)\n    driver = get_driver()",
+        "peekOfCode": "def before_scenario(context, scenario):\n    service = Service(ChromeDriverManager().install())\n    # options = webdriver.ChromeOptions()\n    driver = webdriver.Chrome(service=service)\n    driver.implicitly_wait(10)\n    # context.driver.set_window_position(2000, 0)\n    set_driver(driver)\n    driver.maximize_window()\ndef after_scenario(context, scenario):\n    print(scenario.name)",
         "detail": "features.environment",
         "documentation": {}
     },
