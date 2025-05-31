@@ -40,6 +40,22 @@
         "documentation": {}
     },
     {
+        "label": "get_driver",
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "isExtraImport": true,
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
+        "label": "get_driver",
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "isExtraImport": true,
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "features.helpers.driver",
         "description": "features.helpers.driver",
@@ -57,6 +73,14 @@
     },
     {
         "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "Select",
         "importPath": "selenium.webdriver.support.ui",
         "description": "selenium.webdriver.support.ui",
         "isExtraImport": true,
@@ -118,6 +142,38 @@
         "description": "features.pages.base_page",
         "isExtraImport": true,
         "detail": "features.pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "features.pages.base_page",
+        "description": "features.pages.base_page",
+        "isExtraImport": true,
+        "detail": "features.pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "given",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "when",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "then",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
         "documentation": {}
     },
     {
@@ -217,6 +273,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "isExtraImport": true,
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
         "label": "acessar_site_LUMA",
         "importPath": "features.steps.login_steps",
         "description": "features.steps.login_steps",
@@ -238,6 +302,38 @@
         "description": "features.steps.login_steps",
         "isExtraImport": true,
         "detail": "features.steps.login_steps",
+        "documentation": {}
+    },
+    {
+        "label": "acessar_site_LUMA",
+        "importPath": "features.steps.login_steps",
+        "description": "features.steps.login_steps",
+        "isExtraImport": true,
+        "detail": "features.steps.login_steps",
+        "documentation": {}
+    },
+    {
+        "label": "clica_no_link_whats_new",
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "isExtraImport": true,
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
+        "label": "redireciona_homepage",
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "isExtraImport": true,
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
+        "label": "valida_url",
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "isExtraImport": true,
+        "detail": "features.pages.pagina_novidades_page",
         "documentation": {}
     },
     {
@@ -966,6 +1062,87 @@
         "documentation": {}
     },
     {
+        "label": "volta_para_home",
+        "kind": 2,
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "peekOfCode": "def volta_para_home():\n    find_element(LOGO_HOME).click()\ndef verificar_url_esperada(url_esperada):\n    time.sleep(5)\n    url_atual = get_driver().current_url\n    if url_atual == url_esperada:\n        print(\"Não era essa não. Volta para home\")\n        volta_para_home()\n    print(\"Url diferente\")\ndef verifica_url_para_validacao(url_esperada):",
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
+        "label": "verificar_url_esperada",
+        "kind": 2,
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "peekOfCode": "def verificar_url_esperada(url_esperada):\n    time.sleep(5)\n    url_atual = get_driver().current_url\n    if url_atual == url_esperada:\n        print(\"Não era essa não. Volta para home\")\n        volta_para_home()\n    print(\"Url diferente\")\ndef verifica_url_para_validacao(url_esperada):\n    time.sleep(5)\n    url_atual = get_driver().current_url",
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
+        "label": "verifica_url_para_validacao",
+        "kind": 2,
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "peekOfCode": "def verifica_url_para_validacao(url_esperada):\n    time.sleep(5)\n    url_atual = get_driver().current_url\n    assert url_atual == url_esperada, f\"Erro: Esperado a URL '{url_esperada}', mas obtido '{url_atual}'\"\n    print(\"Validado!\")\ndef valida_url():\n    verifica_url_para_validacao(url_esperada)\ndef redireciona_homepage():\n    verificar_url_esperada(url_esperada)\ndef clica_no_link_whats_new():",
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
+        "label": "valida_url",
+        "kind": 2,
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "peekOfCode": "def valida_url():\n    verifica_url_para_validacao(url_esperada)\ndef redireciona_homepage():\n    verificar_url_esperada(url_esperada)\ndef clica_no_link_whats_new():\n    # wait_for_element(5)\n    get_driver().find_element(By.XPATH, LINK_WHATS_NEW).click()",
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
+        "label": "redireciona_homepage",
+        "kind": 2,
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "peekOfCode": "def redireciona_homepage():\n    verificar_url_esperada(url_esperada)\ndef clica_no_link_whats_new():\n    # wait_for_element(5)\n    get_driver().find_element(By.XPATH, LINK_WHATS_NEW).click()",
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
+        "label": "clica_no_link_whats_new",
+        "kind": 2,
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "peekOfCode": "def clica_no_link_whats_new():\n    # wait_for_element(5)\n    get_driver().find_element(By.XPATH, LINK_WHATS_NEW).click()",
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
+        "label": "LOGO_HOME",
+        "kind": 5,
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "peekOfCode": "LOGO_HOME = \".logo\"\nLINK_WHATS_NEW = \"//a[@href='https://magento.softwaretestingboard.com/what-is-new.html']\" \n#___ VARIÁVEL PARA AJUDAR TESTE ___\nurl_esperada = \"https://magento.softwaretestingboard.com/what-is-new.html\"\ndef volta_para_home():\n    find_element(LOGO_HOME).click()\ndef verificar_url_esperada(url_esperada):\n    time.sleep(5)\n    url_atual = get_driver().current_url\n    if url_atual == url_esperada:",
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
+        "label": "LINK_WHATS_NEW",
+        "kind": 5,
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "peekOfCode": "LINK_WHATS_NEW = \"//a[@href='https://magento.softwaretestingboard.com/what-is-new.html']\" \n#___ VARIÁVEL PARA AJUDAR TESTE ___\nurl_esperada = \"https://magento.softwaretestingboard.com/what-is-new.html\"\ndef volta_para_home():\n    find_element(LOGO_HOME).click()\ndef verificar_url_esperada(url_esperada):\n    time.sleep(5)\n    url_atual = get_driver().current_url\n    if url_atual == url_esperada:\n        print(\"Não era essa não. Volta para home\")",
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
+        "label": "url_esperada",
+        "kind": 5,
+        "importPath": "features.pages.pagina_novidades_page",
+        "description": "features.pages.pagina_novidades_page",
+        "peekOfCode": "url_esperada = \"https://magento.softwaretestingboard.com/what-is-new.html\"\ndef volta_para_home():\n    find_element(LOGO_HOME).click()\ndef verificar_url_esperada(url_esperada):\n    time.sleep(5)\n    url_atual = get_driver().current_url\n    if url_atual == url_esperada:\n        print(\"Não era essa não. Volta para home\")\n        volta_para_home()\n    print(\"Url diferente\")",
+        "detail": "features.pages.pagina_novidades_page",
+        "documentation": {}
+    },
+    {
         "label": "adicionar_produto",
         "kind": 2,
         "importPath": "features.steps.carrinho_steps",
@@ -1044,6 +1221,33 @@
         "description": "features.steps.login_steps",
         "peekOfCode": "def validar_login_sucesso(context):\n    print(f\"Mensagem esperada: {mensagem_esperada_seja_bem_vindo()}\")\n    print(f\"Mensagem recuperada: {mensagem_recuperada_seja_bem_vindo()}\")\n    assert mensagem_recuperada_seja_bem_vindo() == mensagem_esperada_seja_bem_vindo(), f\"\\nEsperados: {mensagem_esperada_seja_bem_vindo()}\\nRecebidos: {mensagem_recuperada_seja_bem_vindo()}\"",
         "detail": "features.steps.login_steps",
+        "documentation": {}
+    },
+    {
+        "label": "homepage",
+        "kind": 2,
+        "importPath": "features.steps.pagina_novidades_steps",
+        "description": "features.steps.pagina_novidades_steps",
+        "peekOfCode": "def homepage(context):\n    acessar_site_LUMA(context)\n    redireciona_homepage()\n@when(u'clica no link What\\'s New')\ndef entra_na_página_whats_new(context):\n    clica_no_link_whats_new()\n@then(u'deve ser redirecionado para página da What\\'s New')\ndef valida_url_da_pagina(context):\n    valida_url()",
+        "detail": "features.steps.pagina_novidades_steps",
+        "documentation": {}
+    },
+    {
+        "label": "entra_na_página_whats_new",
+        "kind": 2,
+        "importPath": "features.steps.pagina_novidades_steps",
+        "description": "features.steps.pagina_novidades_steps",
+        "peekOfCode": "def entra_na_página_whats_new(context):\n    clica_no_link_whats_new()\n@then(u'deve ser redirecionado para página da What\\'s New')\ndef valida_url_da_pagina(context):\n    valida_url()",
+        "detail": "features.steps.pagina_novidades_steps",
+        "documentation": {}
+    },
+    {
+        "label": "valida_url_da_pagina",
+        "kind": 2,
+        "importPath": "features.steps.pagina_novidades_steps",
+        "description": "features.steps.pagina_novidades_steps",
+        "peekOfCode": "def valida_url_da_pagina(context):\n    valida_url()",
+        "detail": "features.steps.pagina_novidades_steps",
         "documentation": {}
     },
     {
