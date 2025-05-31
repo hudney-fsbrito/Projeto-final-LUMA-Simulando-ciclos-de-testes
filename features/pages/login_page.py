@@ -34,6 +34,14 @@ nome = "Marsupilame"
 sobrenome = "Bertoudo"
 email = "marsuBE@gmail.com"
 senha = "@MarsuBer1234"
+# ___________________ cadastro_________________
+
+nomeCadastro = "Antonio"
+sobrenomeCadastro = "Souza"
+emailCadastro = "antonio@gmail.com"
+senhaCadastro = "@Antonio1234"
+
+
 
 # ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________
 
@@ -44,19 +52,19 @@ def preencher_senha_login():
     find_element(CAMPO_SENHA_LOGIN).send_keys(senha)
     
 def preencher_nome():
-    find_element(CAMPO_NOME).send_keys(nome)
+    find_element(CAMPO_NOME).send_keys(nomeCadastro)
 
 def preencher_sobrenome_nome():
-    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)
+    find_element(CAMPO_SOBRENOME).send_keys(sobrenomeCadastro)
 
 def preencher_email():
-    find_element(CAMPO_EMAIL).send_keys(email)
+    find_element(CAMPO_EMAIL).send_keys(emailCadastro)
 
 def preencher_senha():
-    find_element(CAMPO_SENHA).send_keys(senha)
+    find_element(CAMPO_SENHA).send_keys(senhaCadastro)
 
 def preencher_confirma_senha():
-    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)
+    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senhaCadastro)
 
 
 # ____________ MÉTODO CLICK ____________

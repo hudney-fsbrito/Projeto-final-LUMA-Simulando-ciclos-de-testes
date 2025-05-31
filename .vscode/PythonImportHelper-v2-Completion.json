@@ -144,6 +144,22 @@
         "documentation": {}
     },
     {
+        "label": "get_driver",
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "isExtraImport": true,
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
+        "label": "get_driver",
+        "importPath": "features.helpers.driver",
+        "description": "features.helpers.driver",
+        "isExtraImport": true,
+        "detail": "features.helpers.driver",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "features.helpers.driver",
         "description": "features.helpers.driver",
@@ -361,6 +377,70 @@
         "documentation": {}
     },
     {
+        "label": "given",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "when",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "then",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "given",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "when",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "then",
+        "importPath": "behave",
+        "description": "behave",
+        "isExtraImport": true,
+        "detail": "behave",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "isExtraImport": true,
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "isExtraImport": true,
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
@@ -449,6 +529,30 @@
         "documentation": {}
     },
     {
+        "label": "clicar_sign_in",
+        "importPath": "features.steps.login_steps",
+        "description": "features.steps.login_steps",
+        "isExtraImport": true,
+        "detail": "features.steps.login_steps",
+        "documentation": {}
+    },
+    {
+        "label": "preencher_dados_login",
+        "importPath": "features.steps.login_steps",
+        "description": "features.steps.login_steps",
+        "isExtraImport": true,
+        "detail": "features.steps.login_steps",
+        "documentation": {}
+    },
+    {
+        "label": "acessar_site_LUMA",
+        "importPath": "features.steps.login_steps",
+        "description": "features.steps.login_steps",
+        "isExtraImport": true,
+        "detail": "features.steps.login_steps",
+        "documentation": {}
+    },
+    {
         "label": "acessar_site_LUMA",
         "importPath": "features.steps.login_steps",
         "description": "features.steps.login_steps",
@@ -486,6 +590,38 @@
         "description": "features.pages.carrinho_page",
         "isExtraImport": true,
         "detail": "features.pages.carrinho_page",
+        "documentation": {}
+    },
+    {
+        "label": "clicar_icone_desejo",
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "isExtraImport": true,
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
+        "label": "clicar_no_produto",
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "isExtraImport": true,
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_esperada_de_produto_adicionado_desejo",
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "isExtraImport": true,
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_recuperada",
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "isExtraImport": true,
+        "detail": "features.pages.lista_de_desejos_page",
         "documentation": {}
     },
     {
@@ -1002,11 +1138,83 @@
         "documentation": {}
     },
     {
+        "label": "clicar_no_produto",
+        "kind": 2,
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "peekOfCode": "def clicar_no_produto():\n    find_element(CAMPO_ITEM_PRODUTO).click()\ndef clicar_icone_desejo():\n    find_element(BOTAO_LISTA_DESEJO).click()\ndef mensagem_recuperada():\n    return get_driver().find_element(By.XPATH, MENSAGEM_ADICIONADO_LISTA_DESEJO).text.strip()\ndef mensagem_esperada_de_produto_adicionado_desejo():\n    return mensagem_sucesso_item_adicionado_desejo",
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
+        "label": "clicar_icone_desejo",
+        "kind": 2,
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "peekOfCode": "def clicar_icone_desejo():\n    find_element(BOTAO_LISTA_DESEJO).click()\ndef mensagem_recuperada():\n    return get_driver().find_element(By.XPATH, MENSAGEM_ADICIONADO_LISTA_DESEJO).text.strip()\ndef mensagem_esperada_de_produto_adicionado_desejo():\n    return mensagem_sucesso_item_adicionado_desejo",
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_recuperada",
+        "kind": 2,
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "peekOfCode": "def mensagem_recuperada():\n    return get_driver().find_element(By.XPATH, MENSAGEM_ADICIONADO_LISTA_DESEJO).text.strip()\ndef mensagem_esperada_de_produto_adicionado_desejo():\n    return mensagem_sucesso_item_adicionado_desejo",
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_esperada_de_produto_adicionado_desejo",
+        "kind": 2,
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "peekOfCode": "def mensagem_esperada_de_produto_adicionado_desejo():\n    return mensagem_sucesso_item_adicionado_desejo",
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
+        "label": "CAMPO_ITEM_PRODUTO",
+        "kind": 5,
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "peekOfCode": "CAMPO_ITEM_PRODUTO = \".product-image-photo\"\nBOTAO_LISTA_DESEJO = \".towishlist\"\nMENSAGEM_ADICIONADO_LISTA_DESEJO = \"//div[contains(@class, 'message-success')]//div\"\nmensagem_sucesso_item_adicionado_desejo = \"Radiant Tee has been added to your Wish List. Click here to continue shopping.\"\ndef clicar_no_produto():\n    find_element(CAMPO_ITEM_PRODUTO).click()\ndef clicar_icone_desejo():\n    find_element(BOTAO_LISTA_DESEJO).click()\ndef mensagem_recuperada():\n    return get_driver().find_element(By.XPATH, MENSAGEM_ADICIONADO_LISTA_DESEJO).text.strip()",
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
+        "label": "BOTAO_LISTA_DESEJO",
+        "kind": 5,
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "peekOfCode": "BOTAO_LISTA_DESEJO = \".towishlist\"\nMENSAGEM_ADICIONADO_LISTA_DESEJO = \"//div[contains(@class, 'message-success')]//div\"\nmensagem_sucesso_item_adicionado_desejo = \"Radiant Tee has been added to your Wish List. Click here to continue shopping.\"\ndef clicar_no_produto():\n    find_element(CAMPO_ITEM_PRODUTO).click()\ndef clicar_icone_desejo():\n    find_element(BOTAO_LISTA_DESEJO).click()\ndef mensagem_recuperada():\n    return get_driver().find_element(By.XPATH, MENSAGEM_ADICIONADO_LISTA_DESEJO).text.strip()\ndef mensagem_esperada_de_produto_adicionado_desejo():",
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
+        "label": "MENSAGEM_ADICIONADO_LISTA_DESEJO",
+        "kind": 5,
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "peekOfCode": "MENSAGEM_ADICIONADO_LISTA_DESEJO = \"//div[contains(@class, 'message-success')]//div\"\nmensagem_sucesso_item_adicionado_desejo = \"Radiant Tee has been added to your Wish List. Click here to continue shopping.\"\ndef clicar_no_produto():\n    find_element(CAMPO_ITEM_PRODUTO).click()\ndef clicar_icone_desejo():\n    find_element(BOTAO_LISTA_DESEJO).click()\ndef mensagem_recuperada():\n    return get_driver().find_element(By.XPATH, MENSAGEM_ADICIONADO_LISTA_DESEJO).text.strip()\ndef mensagem_esperada_de_produto_adicionado_desejo():\n    return mensagem_sucesso_item_adicionado_desejo",
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
+        "label": "mensagem_sucesso_item_adicionado_desejo",
+        "kind": 5,
+        "importPath": "features.pages.lista_de_desejos_page",
+        "description": "features.pages.lista_de_desejos_page",
+        "peekOfCode": "mensagem_sucesso_item_adicionado_desejo = \"Radiant Tee has been added to your Wish List. Click here to continue shopping.\"\ndef clicar_no_produto():\n    find_element(CAMPO_ITEM_PRODUTO).click()\ndef clicar_icone_desejo():\n    find_element(BOTAO_LISTA_DESEJO).click()\ndef mensagem_recuperada():\n    return get_driver().find_element(By.XPATH, MENSAGEM_ADICIONADO_LISTA_DESEJO).text.strip()\ndef mensagem_esperada_de_produto_adicionado_desejo():\n    return mensagem_sucesso_item_adicionado_desejo",
+        "detail": "features.pages.lista_de_desejos_page",
+        "documentation": {}
+    },
+    {
         "label": "preencher_email_login",
         "kind": 2,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "def preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)\ndef preencher_email():\n    find_element(CAMPO_EMAIL).send_keys(email)",
+        "peekOfCode": "def preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nomeCadastro)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenomeCadastro)\ndef preencher_email():\n    find_element(CAMPO_EMAIL).send_keys(emailCadastro)",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1015,7 +1223,7 @@
         "kind": 2,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "def preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)\ndef preencher_email():\n    find_element(CAMPO_EMAIL).send_keys(email)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senha)",
+        "peekOfCode": "def preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nomeCadastro)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenomeCadastro)\ndef preencher_email():\n    find_element(CAMPO_EMAIL).send_keys(emailCadastro)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senhaCadastro)",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1024,7 +1232,7 @@
         "kind": 2,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "def preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)\ndef preencher_email():\n    find_element(CAMPO_EMAIL).send_keys(email)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senha)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)",
+        "peekOfCode": "def preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nomeCadastro)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenomeCadastro)\ndef preencher_email():\n    find_element(CAMPO_EMAIL).send_keys(emailCadastro)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senhaCadastro)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senhaCadastro)",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1033,7 +1241,7 @@
         "kind": 2,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "def preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)\ndef preencher_email():\n    find_element(CAMPO_EMAIL).send_keys(email)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senha)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)\n# ____________ MÉTODO CLICK ____________\ndef clicar_botao_login():",
+        "peekOfCode": "def preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenomeCadastro)\ndef preencher_email():\n    find_element(CAMPO_EMAIL).send_keys(emailCadastro)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senhaCadastro)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senhaCadastro)\n# ____________ MÉTODO CLICK ____________\ndef clicar_botao_login():",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1042,7 +1250,7 @@
         "kind": 2,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "def preencher_email():\n    find_element(CAMPO_EMAIL).send_keys(email)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senha)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)\n# ____________ MÉTODO CLICK ____________\ndef clicar_botao_login():\n    # Localiza o link/botão para abrirpágina de criar conta\n    find_element(BOTAO_LOGIN_OK).click()",
+        "peekOfCode": "def preencher_email():\n    find_element(CAMPO_EMAIL).send_keys(emailCadastro)\ndef preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senhaCadastro)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senhaCadastro)\n# ____________ MÉTODO CLICK ____________\ndef clicar_botao_login():\n    # Localiza o link/botão para abrirpágina de criar conta\n    find_element(BOTAO_LOGIN_OK).click()",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1051,7 +1259,7 @@
         "kind": 2,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "def preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senha)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)\n# ____________ MÉTODO CLICK ____________\ndef clicar_botao_login():\n    # Localiza o link/botão para abrirpágina de criar conta\n    find_element(BOTAO_LOGIN_OK).click()\ndef clicar_link_criar_conta():\n    # Localiza o link/botão para abrirpágina de criar conta",
+        "peekOfCode": "def preencher_senha():\n    find_element(CAMPO_SENHA).send_keys(senhaCadastro)\ndef preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senhaCadastro)\n# ____________ MÉTODO CLICK ____________\ndef clicar_botao_login():\n    # Localiza o link/botão para abrirpágina de criar conta\n    find_element(BOTAO_LOGIN_OK).click()\ndef clicar_link_criar_conta():\n    # Localiza o link/botão para abrirpágina de criar conta",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1060,7 +1268,7 @@
         "kind": 2,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "def preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senha)\n# ____________ MÉTODO CLICK ____________\ndef clicar_botao_login():\n    # Localiza o link/botão para abrirpágina de criar conta\n    find_element(BOTAO_LOGIN_OK).click()\ndef clicar_link_criar_conta():\n    # Localiza o link/botão para abrirpágina de criar conta\n    get_driver().find_element(By.XPATH, LINK_CRIAR_CONTA).click()\ndef clicar_link_sign_in():",
+        "peekOfCode": "def preencher_confirma_senha():\n    find_element(CAMPO_CONFIRMA_SENHA).send_keys(senhaCadastro)\n# ____________ MÉTODO CLICK ____________\ndef clicar_botao_login():\n    # Localiza o link/botão para abrirpágina de criar conta\n    find_element(BOTAO_LOGIN_OK).click()\ndef clicar_link_criar_conta():\n    # Localiza o link/botão para abrirpágina de criar conta\n    get_driver().find_element(By.XPATH, LINK_CRIAR_CONTA).click()\ndef clicar_link_sign_in():",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1276,7 +1484,7 @@
         "kind": 5,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "mensagem_seja_bem_vindo = \"Welcome,\" #Welcome, Marsupilame Bertoudo!\nmensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"\nnome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():",
+        "peekOfCode": "mensagem_seja_bem_vindo = \"Welcome,\" #Welcome, Marsupilame Bertoudo!\nmensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"\nnome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ cadastro_________________\nnomeCadastro = \"Antonio\"\nsobrenomeCadastro = \"Souza\"\nemailCadastro = \"antonio@gmail.com\"",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1285,7 +1493,7 @@
         "kind": 5,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "mensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"\nnome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)",
+        "peekOfCode": "mensagem_conta_criada_sucesso = \"Thank you for registering with Main Website Store.\"\nnome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ cadastro_________________\nnomeCadastro = \"Antonio\"\nsobrenomeCadastro = \"Souza\"\nemailCadastro = \"antonio@gmail.com\"\nsenhaCadastro = \"@Antonio1234\"",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1294,7 +1502,7 @@
         "kind": 5,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "nome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():",
+        "peekOfCode": "nome = \"Marsupilame\"\nsobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ cadastro_________________\nnomeCadastro = \"Antonio\"\nsobrenomeCadastro = \"Souza\"\nemailCadastro = \"antonio@gmail.com\"\nsenhaCadastro = \"@Antonio1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1303,7 +1511,7 @@
         "kind": 5,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "sobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)",
+        "peekOfCode": "sobrenome = \"Bertoudo\"\nemail = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ cadastro_________________\nnomeCadastro = \"Antonio\"\nsobrenomeCadastro = \"Souza\"\nemailCadastro = \"antonio@gmail.com\"\nsenhaCadastro = \"@Antonio1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1312,7 +1520,7 @@
         "kind": 5,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "email = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():",
+        "peekOfCode": "email = \"marsuBE@gmail.com\"\nsenha = \"@MarsuBer1234\"\n# ___________________ cadastro_________________\nnomeCadastro = \"Antonio\"\nsobrenomeCadastro = \"Souza\"\nemailCadastro = \"antonio@gmail.com\"\nsenhaCadastro = \"@Antonio1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1321,7 +1529,43 @@
         "kind": 5,
         "importPath": "features.pages.login_page",
         "description": "features.pages.login_page",
-        "peekOfCode": "senha = \"@MarsuBer1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nome)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenome)",
+        "peekOfCode": "senha = \"@MarsuBer1234\"\n# ___________________ cadastro_________________\nnomeCadastro = \"Antonio\"\nsobrenomeCadastro = \"Souza\"\nemailCadastro = \"antonio@gmail.com\"\nsenhaCadastro = \"@Antonio1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "nomeCadastro",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "nomeCadastro = \"Antonio\"\nsobrenomeCadastro = \"Souza\"\nemailCadastro = \"antonio@gmail.com\"\nsenhaCadastro = \"@Antonio1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "sobrenomeCadastro",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "sobrenomeCadastro = \"Souza\"\nemailCadastro = \"antonio@gmail.com\"\nsenhaCadastro = \"@Antonio1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nomeCadastro)",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "emailCadastro",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "emailCadastro = \"antonio@gmail.com\"\nsenhaCadastro = \"@Antonio1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nomeCadastro)\ndef preencher_sobrenome_nome():",
+        "detail": "features.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "senhaCadastro",
+        "kind": 5,
+        "importPath": "features.pages.login_page",
+        "description": "features.pages.login_page",
+        "peekOfCode": "senhaCadastro = \"@Antonio1234\"\n# ___________________ MÉTODOS DE PREECHIMENTO DE CAMPO ___________________\ndef preencher_email_login():\n    find_element(CAMPO_EMAIL_LOGIN).send_keys(email)\ndef preencher_senha_login():\n    find_element(CAMPO_SENHA_LOGIN).send_keys(senha)\ndef preencher_nome():\n    find_element(CAMPO_NOME).send_keys(nomeCadastro)\ndef preencher_sobrenome_nome():\n    find_element(CAMPO_SOBRENOME).send_keys(sobrenomeCadastro)",
         "detail": "features.pages.login_page",
         "documentation": {}
     },
@@ -1548,6 +1792,33 @@
         "description": "features.steps.carrinho_steps",
         "peekOfCode": "def valida_compra(context):\n    assert mensagem_de_pedido_efetuado() == mensagem_esperada_de_compra(), f\"\\nEsperados: {mensagem_esperada_de_compra()}\\nRecebidos: {mensagem_de_pedido_efetuado()}\"",
         "detail": "features.steps.carrinho_steps",
+        "documentation": {}
+    },
+    {
+        "label": "clicar_no_item_de_produto",
+        "kind": 2,
+        "importPath": "features.steps.lista_de_desejos_steps",
+        "description": "features.steps.lista_de_desejos_steps",
+        "peekOfCode": "def clicar_no_item_de_produto(context):\n    acessar_site_LUMA(context)\n    clicar_sign_in(context)\n    preencher_dados_login(context)\n    clicar_no_produto()\n@when(u'ele clica em \"add to wish list\"')\ndef clicar_botao_desejo(context):\n    clicar_icone_desejo()\n@then(u'o item vai para a \"my wish list\"')\ndef item_adicionado_lista_desejo(context):",
+        "detail": "features.steps.lista_de_desejos_steps",
+        "documentation": {}
+    },
+    {
+        "label": "clicar_botao_desejo",
+        "kind": 2,
+        "importPath": "features.steps.lista_de_desejos_steps",
+        "description": "features.steps.lista_de_desejos_steps",
+        "peekOfCode": "def clicar_botao_desejo(context):\n    clicar_icone_desejo()\n@then(u'o item vai para a \"my wish list\"')\ndef item_adicionado_lista_desejo(context):\n    assert mensagem_recuperada() == mensagem_esperada_de_produto_adicionado_desejo(), f\"\\nEsperados: {mensagem_esperada_de_produto_adicionado_desejo()}\\nRecebidos: {mensagem_recuperada()}\"",
+        "detail": "features.steps.lista_de_desejos_steps",
+        "documentation": {}
+    },
+    {
+        "label": "item_adicionado_lista_desejo",
+        "kind": 2,
+        "importPath": "features.steps.lista_de_desejos_steps",
+        "description": "features.steps.lista_de_desejos_steps",
+        "peekOfCode": "def item_adicionado_lista_desejo(context):\n    assert mensagem_recuperada() == mensagem_esperada_de_produto_adicionado_desejo(), f\"\\nEsperados: {mensagem_esperada_de_produto_adicionado_desejo()}\\nRecebidos: {mensagem_recuperada()}\"",
+        "detail": "features.steps.lista_de_desejos_steps",
         "documentation": {}
     },
     {
