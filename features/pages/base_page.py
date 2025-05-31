@@ -17,3 +17,5 @@ def wait_for_element(locator, timeout):
     return WebDriverWait(get_driver(), timeout).until(
         EC.presence_of_all_elements_located(element)
     )
+def wait_for_elements(locator, timeout=10):
+    return WebDriverWait(get_driver(), timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, locator)))
